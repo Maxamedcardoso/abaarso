@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ min-height: 100vh;
+    background-color: #133b9f;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    min-width: 300px;;
+   border-radius:20px ;
+    background:rgba(252, 252, 252, 0.9);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 20px;
+    position: relative;
+}
+
+.log img{
+    width: 200px;
+ margin-bottom: 10px;
+    border-radius: 50%;
+    padding: 0;
+  
+}
+.profile_name h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    
+}
+
+.profile_name p{
+  
+  font-size: 13px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+   text-transform: capitalize;
+}
+.profile_name h2::before{
+    content: "";
+    
+  width: 0;
+    height: 1px;
+    position: absolute;
+    background: #ff00ee;
+    left: 0%;
+    top: 80%;
+    bottom: 30px;
+   
+    transition: all 0.3s ease-in-out;
+   
+}
+.profile_name:hover h2::before{
+    width: 100%;
+    }
+
+.social_icons{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    a{
+        color: #9e9b9b;
+        font-size: 30px;
+        transition: color 0.3s ease-in-out;
+    }
+    a:hover{
+        color: #333;
+    }
+    .fa-facebook:hover{
+        color: #3b5998;
+     }
+     .fa-youtube:hover{
+        color: #ff0000;
+     }
+     .fa-instagram:hover{
+        color: #e4405f;
+
+     }
+
+    i{
+        margin: 0 10px;
+    }
+    a:last-child{
+        margin-right: 0;
+    }
+ 
+}
+.container:hover{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="log">
+        <img src="/45545.png" alt="" srcset="">
+    </div>
+    <div class="profile_name">
+        <h2>adna xasan aadan</h2>
+        <p>web designer | editor | coder</p>
+   
+       
+    </div>
+    <div class="social_icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    </div>
+</body>
+</html>
