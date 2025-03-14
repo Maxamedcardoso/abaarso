@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            min-height: 100vh;
+            background-color: #1c1c1d;
+            flex-wrap: wrap;
+            
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 400px;
+            border-radius:20px ;
+            background:rgba(252, 252, 252, 0.9);
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            padding: 20px;
+            position: relative;
+            cursor: pointer;
+           transition: all 0.3s ease-in-out;
+           height: 500px;
+
+        }
+        .container:hover{
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+        }
+      
+        .logo{
+            text-align: center;
+            margin-bottom: 90px;
+
+        }
+         .container h1{
+            font-size: 30px;
+            font-weight: bold;
+            color: #0a0909;
+           
+            text-transform: capitalize;
+            padding: 0;
+          
+        }
+        .container p{
+
+            margin-top: 10px;
+            padding: 0;
+            text-transform: capitalize;
+            font-size: 13px;
+            color: #151515;
+          
+        }
+        .name-group{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 999;
+           
+          
+        }
+        .name-group input{
+            width: 48%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+           text-align: center;
+           
+         
+            
+        }
+        .name-group input:focus{
+            border: 1px solid #a2a0a0;
+        }
+        .name-group input:first-child{
+            margin-right: 10px;
+            
+        }
+        .name-group input:last-child{
+            margin-left: 10px;
+        }
+        .name-group ::placeholder{
+            text-transform: capitalize;
+    
+        
+            position: absolute;
+            left: 30%;
+           
+            
+        }
+        .fa-user{
+      position: absolute;
+        color: #5e5b5b;
+     margin-left: 13px !important;
+     top: 10px;
+
+
+     
+
+      }
+       .email-group{
+            display: block;
+            
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+           
+            position: relative;
+         
+        }
+        .email-group input{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            z-index: 999;
+           
+        }
+        .email-group input::placeholder{
+            text-transform: capitalize;
+            position: absolute;
+            left: 10%;
+
+
+        }
+        #email{
+            margin-bottom: 20px !important;
+        }
+
+        .box{
+           
+            position: absolute;
+            color: #5e5b5b;
+           margin-left: 10px !important;
+           margin-top: 8px;
+        }
+        img{
+            width: 20%;
+            
+        }
+        .fa-phone-flip{
+            position: absolute;
+            color: #5e5b5b;
+           margin-left: 10px !important;
+           margin-top: 8px;
+           z-index: 1;
+        }
+        .email-group input:focus{
+         
+            border: 1px solid #a2a0a0;
+        
+        }
+       
+        .submit{
+            text-transform: capitalize;
+            padding: 10px 20px;
+            background-color: #1d242c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .submit:hover{
+            background-color: #1e1f58;
+        }
+     .p{
+         text-align: center;
+        margin-top: 30px !important;
+         font-size: 13px;
+         color: #391c9b !important;
+     }
+   
+     
+        
+        
+       
+     
+
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>Contact Us</h1>
+            <p>we will get get back to your asap</p>
+        </div>
+       
+        
+           
+
+           
+            <div class="name-group">
+                
+                <i class="fa fa-user"></i>
+                <input type="text" name="" id="" placeholder="first name" required>
+                <input type="text" name="" id="" placeholder="last name" required>
+       
+            </div>
+        
+            <div class="email-group">
+            <i class="box"><img src="mail_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt=""></i>
+            <input  type="email" name="" id="email" placeholder="email" required>
+            <i class="fas fa-phone-flip"></i>
+          <input type="number" name="" id="" placeholder="phone" required>
+          </div>
+          <input type="submit" value="send" class="submit">
+          <p class="p">you may also call us at 252-634949642</p>
+           
+       
+    </div>
+    
+</body>
+</html>
